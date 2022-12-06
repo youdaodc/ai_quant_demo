@@ -9,6 +9,8 @@ ts.set_token(ts_token)
 ALL_STOCK_LIST = [ele.strip() for ele in
                   open(os.path.join("file", "stock_list.txt")).readlines()]  # 所有股票的集合（文件里的内容根据自己的需求定制）
 OHLCV_DIR = os.path.join("file", "data")  # 此文件中存放所有股票的open/high/low/close/volume数据
+if not os.path.exists(OHLCV_DIR):
+    os.makedirs(OHLCV_DIR)
 
 
 def fetch_data(start_date, end_date):

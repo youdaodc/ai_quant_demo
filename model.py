@@ -5,8 +5,10 @@ import pandas as pd
 import lightgbm as lgb
 from feature import FEATURE_DIR, LABEL_NAME
 
-MODEL_FILE = os.path.join("file", "model", "lgb.txt")
-
+MODEL_DIR=os.path.join("file", "model")
+MODEL_FILE = os.path.join(MODEL_DIR, "lgb.txt")
+if not os.path.exists(MODEL_DIR):
+    os.makedirs(MODEL_DIR)
 
 def train():
     '''

@@ -8,6 +8,8 @@ from data import OHLCV_DIR, ALL_STOCK_LIST
 
 LABEL_NAME = "LABEL"
 FEATURE_DIR = os.path.join("file", "feature")
+if not os.path.exists(FEATURE_DIR):
+    os.makedirs(FEATURE_DIR)
 
 
 def cal_label(df):
