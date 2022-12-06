@@ -1,5 +1,6 @@
 .idea
 __pycache__
+file/tushare_token.txt
 file/data/*
 file/feature/*
 file/model/*
