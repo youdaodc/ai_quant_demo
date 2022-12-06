@@ -1,0 +1,5 @@
+file/tushare_token.txt
+file/data/*
+file/feature/*
+file/model/*
+file/record.csv
