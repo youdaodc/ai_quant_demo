@@ -1,4 +1,5 @@
-file/tushare_token.txt
+.idea
+__pycache__
 file/data/*
 file/feature/*
 file/model/*
